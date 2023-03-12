@@ -6,7 +6,7 @@ import map from 'lodash/map';
 
 const Dashboard: FC<SportEvents> = ({ sportEvents }) => {
   return (
-    <div className="container flex flex-col gray-light my-24 mx-auto">
+    <div className="flex flex-wrap justify-center gray-light my-24 mx-4">
       {map(sportEvents, (event: SportEvent) => (
         <SportEventItem {...event} key={event.id} />
       ))}

@@ -23,7 +23,7 @@ const SportEventMarket: FC<Market> = (market) => {
       key={name}>
       {map(selections, (selection: Selection) => (
         <div
-          className="sport-event__right__market__selection h-full flex flex-col justify-evenly items-center px-2 bg-secondary rounded-lg"
+          className="sport-event__right__market__selection min-w-[64px] h-full flex flex-col justify-evenly items-center px-2 bg-secondary rounded-lg"
           key={selection.id}>
           <div>{selection.name}</div>
           <div className="font-bold">{roundedOdds(selection.odds) || 'No data'}</div>
@@ -39,7 +39,7 @@ const SportEventItem: FC<SportEvent> = (sportEvent) => {
 
   return (
     <div
-      className="sport-event max-w-3xl bg-main flex justify-between items-stretch self-center w-full py-8 my-2 rounded-lg flex-wrap"
+      className="sport-event max-w-3xl bg-main flex justify-between items-stretch self-center w-full py-8 my-2 mx-2 rounded-lg flex-wrap"
       key={id}>
       <div className="sport-event__left grow text-white basis-4/6 flex flex-col justify-between items-left pl-6">
         {/* Sport name */}
