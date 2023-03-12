@@ -65,8 +65,8 @@ const Index: FC<SportEvents> = ({ sportEvents: initialSportEvents }) => {
   return (
     <>
       {showSnackbar && (
-        <div className="flex items-center bg-secondary text-white p-6 animate-bounce rounded-lg py-text-white text-lg font-bold fixed top-8 left-10">
-          <p>Data updated!</p>
+        <div className="flex items-center bg-secondary text-white p-8 animate-bounce rounded-lg py-text-white text-xl font-bold fixed top-12 left-10">
+          <p>Data updated was just updated!</p>
         </div>
       )}
       <Dashboard sportEvents={sportEvents} />
