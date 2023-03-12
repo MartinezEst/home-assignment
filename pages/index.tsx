@@ -52,7 +52,8 @@ const Index: FC<SportEvents> = ({ sportEvents: initialSportEvents }) => {
         setShowSnackbar(false);
       }, 2000);
     }
-  }, [data, sportEvents]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data]);
 
   if (error)
     return (
